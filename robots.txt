@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pmarres.github.io/PieterMarres_Resume/sitemap.xml

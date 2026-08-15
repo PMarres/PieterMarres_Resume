@@ -178,7 +178,7 @@
   .cursor{display:inline-block; width:7px; height:14px; background:#57AB5A; vertical-align:middle; animation:blink 1s steps(1) infinite;}
 
   /* ---------- section shell ---------- */
-  section{padding:56px 0;}
+  section{padding:56px 0; scroll-margin-top:76px;}
   .section-head{
     display:flex; align-items:baseline; gap:12px; margin-bottom:28px;
     border-bottom:1px solid var(--hairline); padding-bottom:14px;
