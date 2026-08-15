@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pieter Marres · Functional &amp; QA Test Engineer</title>
+<meta name="description" content="Pieter Marres — Functional &amp; QA Test Engineer. Manual and automated testing, applied AI background, currently testing at 3P.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pieter Marres · Functional &amp; QA Test Engineer">
+<meta property="og:description" content="Manual and automated testing, applied AI background, currently testing at 3P.">
+<meta property="og:image" content="photo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pieter Marres · Functional &amp; QA Test Engineer">
+<meta name="twitter:description" content="Manual and automated testing, applied AI background, currently testing at 3P.">
+<meta name="twitter:image" content="photo.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23171D26'/%3E%3Cpath d='M9 17l5 5 9-11' stroke='%2357AB5A' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,6 +32,10 @@
       <a href="#skills">skills</a>
       <a href="#education">education</a>
       <a href="#contact">contact</a>
+      <a class="resume-link" href="Pieter-Marres-Resume.pdf" download aria-label="Download resume as PDF">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>
+        <span>Resume</span>
+      </a>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
         <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -67,11 +80,11 @@
 
     <!-- 3P -->
     <div class="case open">
-      <div class="case-head" onclick="toggleCase(this)">
+      <div class="case-head" tabindex="0" role="button" aria-expanded="true" aria-controls="case-04-body" onclick="toggleCase(this)" onkeydown="handleCaseKey(event, this)">
         <div>
           <span class="case-id">TEST_04 · 3P</span>
           <p class="case-title">Functional Tester</p>
-          <p class="case-sub">Current role</p>
+          <p class="case-sub">Team Facility</p>
         </div>
         <div class="case-meta">
           <span class="badge running">RUNNING</span>
@@ -79,20 +92,17 @@
           <span class="chevron">▸</span>
         </div>
       </div>
-      <div class="case-body">
+      <div class="case-body" id="case-04-body">
         <div class="case-body-inner">
-          <p class="context">Working across the full test lifecycle for 3P's products, from scoping what needs testing to shipping frameworks and guides the rest of the team relies on.</p>
+          <p class="context">Working across the full test lifecycle for 3P's products related to facility management, from scoping what needs testing to shipping frameworks and guides the rest of the team and the customer relies on.</p>
           <ul class="assertions">
-            <li>Determines <strong>which types of testing</strong> need to be performed for each product area</li>
-            <li>Sets up and maintains <strong>testing frameworks</strong> with Cypress, used across the team</li>
-            <li>Writes detailed, comprehensive, well-structured <strong>test plans and test cases</strong></li>
-            <li>Estimates, prioritizes, and plans <strong>quality testing activities</strong></li>
-            <li>Documents processes and writes <strong>internal guides</strong> for testers and developers</li>
-            <li>Ensures products meet <strong>customer expectations and requirements</strong></li>
-            <li>Works closely with the <strong>development team</strong>, tracked through Jira and Azure DevOps, to improve existing products</li>
+            <li>Creating <strong>test plans and test cases</strong></li>
+            <li>Setting up and maintaining <strong>test frameworks</strong> with Cypress</li>
+            <li>Documenting <strong>test related processes</strong></li>
+            <li>Ensures products meet <strong>expectations and requirements</strong></li>
           </ul>
           <div class="tags">
-            <span class="tag">Jira</span><span class="tag">Azure DevOps</span><span class="tag">Git</span><span class="tag">Cypress</span><span class="tag">Guide writing</span>
+            <span class="tag">Jira</span><span class="tag">Postman</span><span class="tag">Cypress</span><span class="tag">Azure DevOps</span><span class="tag">Git</span>
           </div>
         </div>
       </div>
@@ -100,7 +110,7 @@
 
     <!-- De Agile Testers -->
     <div class="case">
-      <div class="case-head" onclick="toggleCase(this)">
+      <div class="case-head" tabindex="0" role="button" aria-expanded="false" aria-controls="case-03-body" onclick="toggleCase(this)" onkeydown="handleCaseKey(event, this)">
         <div>
           <span class="case-id">TEST_03 · De Agile Testers → Port of Antwerp-Bruges</span>
           <p class="case-title">Junior Test Specialist</p>
@@ -112,13 +122,13 @@
           <span class="chevron">▸</span>
         </div>
       </div>
-      <div class="case-body">
+      <div class="case-body" id="case-03-body">
         <div class="case-body-inner">
-          <p class="context">The Port of Antwerp-Bruges runs multiple applications to manage nautical and port-related activities, from cargo movement to the moveable bridges that keep traffic flowing through the port.</p>
+          <p class="context">The PoAB has multiple applications to manage all nautical and port-related activities. These comprehensive applications help control and structure the operation of the PoAB. Some help determine how cargo is moved, provide an overview of the various moveable structures such as bridges needed to ensure smooth transit in the port.</p>
           <ul class="assertions">
-            <li><strong>Testing:</strong> front- and back-end coverage through exploratory and API testing with Postman</li>
-            <li><strong>Test design:</strong> creation of test scenarios</li>
-            <li><strong>Automation:</strong> wrote automated regression tests with Cypress</li>
+            <li>Front- and backend testing through exploratory testing and <strong>API testing</strong> using Postman, among others</li>
+            <li>Creating and maintaining <strong>test scenarios</strong></li>
+            <li>Reviewing <strong>automated regression tests</strong> with Cypress</li>
           </ul>
           <div class="tags">
             <span class="tag">Jira</span><span class="tag">Postman</span><span class="tag">Cypress</span>
@@ -129,7 +139,7 @@
 
     <!-- Devoteam / Liberty Global -->
     <div class="case">
-      <div class="case-head" onclick="toggleCase(this)">
+      <div class="case-head" tabindex="0" role="button" aria-expanded="false" aria-controls="case-02-body" onclick="toggleCase(this)" onkeydown="handleCaseKey(event, this)">
         <div>
           <span class="case-id">TEST_02 · Devoteam → Liberty Global</span>
           <p class="case-title">Manual / Functional Tester</p>
@@ -137,21 +147,21 @@
         </div>
         <div class="case-meta">
           <span class="badge pass">PASSED</span>
-          <span class="case-dates">Sep 2022 · May 2024</span>
+          <span class="case-dates">Sep 2022 · Jan 2024</span>
           <span class="chevron">▸</span>
         </div>
       </div>
-      <div class="case-body">
+      <div class="case-body" id="case-02-body">
         <div class="case-body-inner">
-          <p class="context">Liberty Global's new platform streams live and on-demand content to mobile, web and TV. It's the same solution used by Telenet and sister companies across multiple countries.</p>
+          <p class="context">A new platform to watch live/stream content on mobile, web and TV devices. This is the solution that is used by Telenet and other similar companies in different countries.</p>
           <ul class="assertions">
-            <li><strong>Regression testing:</strong> manual testing across platforms, new test cases, bug reporting</li>
-            <li><strong>Test review:</strong> reviewed BitBucket merge requests to catch missing automation steps</li>
-            <li><strong>Feature testing:</strong> built and ran tests for new features before they joined the regression suite</li>
+            <li>Testing the application on different platforms. This includes manually testing the <strong>regression tests</strong>, creating new test cases and reporting bugs</li>
+            <li>Reviewing the <strong>BitBucket merge request</strong> to check if the automation test case does not forget any steps</li>
+            <li>Creating tests and testing new features before they are added to the <strong>regression testing scope</strong></li>
           </ul>
           <p class="context">Project ran from Sep 2022 to Jan 2024. Pieter then stayed on with Devoteam on the bench until May 2024.</p>
           <div class="tags">
-            <span class="tag">Jira</span><span class="tag">BitBucket</span><span class="tag">WikiProjects</span><span class="tag">Postman</span><span class="tag">SQL</span><span class="tag">JSON</span>
+            <span class="tag">Jira</span><span class="tag">BitBucket</span><span class="tag">WikiProjects</span><span class="tag">Postman</span><span class="tag">SQL</span><span class="tag">JSON</span><span class="tag">Xray</span>
           </div>
         </div>
       </div>
@@ -159,7 +169,7 @@
 
     <!-- Devoteam intern -->
     <div class="case">
-      <div class="case-head" onclick="toggleCase(this)">
+      <div class="case-head" tabindex="0" role="button" aria-expanded="false" aria-controls="case-01-body" onclick="toggleCase(this)" onkeydown="handleCaseKey(event, this)">
         <div>
           <span class="case-id">TEST_01 · Devoteam</span>
           <p class="case-title">Intern · Applied AI</p>
@@ -171,14 +181,14 @@
           <span class="chevron">▸</span>
         </div>
       </div>
-      <div class="case-body">
+      <div class="case-body" id="case-01-body">
         <div class="case-body-inner">
-          <p class="context">A research project detecting potholes from accelerometer data gathered on bike rides via a mobile app, using the recorded location data to map where they occur.</p>
+          <p class="context">The project aims to detect potholes by analysing accelerometer data collected during bike rides. This data is gathered through a mobile app, which also records location information to enable mapping of pothole locations. Various AI techniques are explored to develop the most effective detection model.</p>
           <ul class="assertions">
-            <li><strong>Research:</strong> studied machine learning, neural networks and data collection methods</li>
-            <li><strong>Data collection:</strong> manually gathered ride data with a mobile app</li>
-            <li><strong>Data transformation:</strong> prepared data for model training and testing</li>
-            <li><strong>Model creation:</strong> built and compared ML and neural network models to find the best fit</li>
+            <li>Collecting information about <strong>machine learning</strong>, neural networks and data collection</li>
+            <li>Manually collecting data with a mobile app</li>
+            <li>Transforming the collected data to be able to use in <strong>training the models</strong> and testing the model</li>
+            <li>Trying and setting up different types of AI models to see which type of model best fits this project (Machine Learning and <strong>Neural Networks</strong>)</li>
           </ul>
           <div class="tags">
             <span class="tag">Jira</span><span class="tag">Python</span><span class="tag">Databricks</span><span class="tag">Azure</span>
@@ -283,15 +293,21 @@
     </div>
 
     <div class="contact-grid">
-      <a class="contact-tile" href="mailto:pietermarres@gmail.com">
-        <span class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
-        </span>
-        <span class="tile-text">
-          <span class="label">Email</span>
-          <span class="value">pietermarres@gmail.com</span>
-        </span>
-      </a>
+      <div class="contact-tile email-tile">
+        <a class="tile-link" href="mailto:pietermarres@gmail.com">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+          </span>
+          <span class="tile-text">
+            <span class="label">Email</span>
+            <span class="value">pietermarres@gmail.com</span>
+          </span>
+        </a>
+        <button class="copy-btn" type="button" onclick="copyEmail(this)" aria-label="Copy email address">
+          <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M20 6 9 17l-5-5"></path></svg>
+        </button>
+      </div>
 
       <a class="contact-tile" href="tel:+32478073881">
         <span class="icon">
@@ -331,11 +347,39 @@
   </section>
 
   <footer>
-    <p>pieter_marres.test · built from the résumé, one assertion at a time</p>
+    <p class="build-tag">build 2026.08 · last updated Aug 2026</p>
   </footer>
 </div>
 
 <script>
+  function copyEmail(btn){
+    const email = 'pietermarres@gmail.com';
+    const iconCopy = btn.querySelector('.icon-copy');
+    const iconCheck = btn.querySelector('.icon-check');
+    function showCopied(){
+      iconCopy.style.display = 'none';
+      iconCheck.style.display = 'block';
+      btn.classList.add('copied');
+      btn.setAttribute('aria-label', 'Email copied');
+      setTimeout(() => {
+        iconCopy.style.display = 'block';
+        iconCheck.style.display = 'none';
+        btn.classList.remove('copied');
+        btn.setAttribute('aria-label', 'Copy email address');
+      }, 1800);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(email).then(showCopied).catch(() => {});
+    } else {
+      const ta = document.createElement('textarea');
+      ta.value = email;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); showCopied(); } catch(e) {}
+      document.body.removeChild(ta);
+    }
+  }
+
   function toggleCase(headEl){
     const card = headEl.parentElement;
     const body = card.querySelector('.case-body');
@@ -343,9 +387,17 @@
     if(isOpen){
       card.classList.remove('open');
       body.style.maxHeight = null;
+      headEl.setAttribute('aria-expanded', 'false');
     } else {
       card.classList.add('open');
       body.style.maxHeight = body.scrollHeight + 'px';
+      headEl.setAttribute('aria-expanded', 'true');
+    }
+  }
+  function handleCaseKey(event, headEl){
+    if(event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar'){
+      event.preventDefault();
+      toggleCase(headEl);
     }
   }
   window.addEventListener('load', () => {
